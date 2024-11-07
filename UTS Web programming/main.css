@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.logodesain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+
+header {
+  background: #703604;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.pp ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.pp ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.pp ul li a:hover {
+  background-color: #2f2f2f42;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container > div {
+  text-align: center;
+}
+
+#menu {
+  background-color: #fdfbf5;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+#menu h2 {
+  color: #6b4423;
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #6b4423;
+}
+
+.menu-item {
+  background-color: #fdfbf5;
+  padding: 1.5rem;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 13px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-img {
+  width: 200px;
+  height: 200px;
+}
+
+.menu-item:hover {
+  transform-style: initial 0.2s;
+}
+
+.menu-item h3 {
+  color: #2f2f2f;
+  margin-bottom: 5px;
+}
+
+.menu-item p {
+  color: #6b4423;
+  margin-bottom: 3rem;
+}
+
+.menu-item button {
+  background: linear-gradient(135deg, #6b4423, #a47551);
+  color: #f7f3e3;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 15px #2f2f2f5d;
+}
+
+.pesan {
+  background-color: #fdfbf5;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  top: 20px;
+}
+
+.pesan h2 {
+  color: #6b4423;
+  font-size: 40px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #6b4423;
+}
+
+#total {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #6b4423;
+}
+
+.pesan button {
+  width: 100%;
+  background: linear-gradient(135deg, #6b4423, #a47551);
+  color: #f7f3e3;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.pesan button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(107, 68, 35, 0.3);
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header.p h2 {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .pp ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pp ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pp ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  #menu {
+    padding: 15px;
+  }
+
+  #menu h2 {
+    font-size: 30px;
+  }
+
+  .menu-item {
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .menu-item h3 {
+    font-size: 18px;
+  }
+
+  .menu-item p {
+    font-size: 14px;
+  }
+
+  .menu-item button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .pesan {
+    padding: 15px;
+  }
+
+  .pesan h2 {
+    font-size: 30px;
+  }
+
+  #total {
+    font-size: 16px;
+  }
+
+  .pesan button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+.footer {
+  background-color: #703604;
+  color: #f8f9fa;
+  padding: 20px ;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.nt {
+  margin-top: 200px;
+}
+
+.informasi-footer {
+  flex: 1;
+  padding: 10px;
+}
+
+.informasi-footer h2 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.informasi-footer a {
+  text-decoration: none;
+  margin-right: 10px;
+ color: #fffefe;
+}
+
+.footer-akhir {
+  text-align: center;
+  margin-top: 20px;
+  color:#fffafa;
+  text-align: center;
+}

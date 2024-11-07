@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NgajengTon</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div class="head">
+          <h1>NgajengTon</h1>
+          <div class="logo desain">
+            <img src="babi.png" alt="logo" class="logo" />
+          </div>
+          <div class="header p">
+            <h2>"Ngajeng Aluh Ajak Semeton"</h2>
+          </div>
+        </div>
+  
+        <nav class="pp">
+          <ul>
+            <li><a href="index.html">Tentang Kami</a></li>
+            <li><a href="pesansekarang.html">Pesan Sekarang</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <main>
+        <section id="menu">
+          <h2>Menu</h2>
+          <div class="menu-item">
+            <div class="menu-text">
+              <h3>Nasi Babi Guling (Paket Biasa)</h3>
+              <p>Harga : Rp25.000</p>
+              <button
+                onclick="Tambahkan('Nasi Babi Guling (Paket Biasa)', 25000)">Tambahkan</button>
+            </div>
+            <img src="paket biasa.jpg" alt="" class="menu-img" />
+          </div>
+          <div class="menu-item">
+            <div class="menu-text">
+              <h3>Nasi Babi Guling (Paket Komplit)</h3>
+              <p>Harga : Rp35.000</p>
+              <button
+                onclick="Tambahkan('Nasi Babi Guling (Paket Komplit)', 35000)">Tambahkan</button>
+            </div>
+            <img src="paket komplit.jpeg" alt="" class="menu-img" />
+          </div>
+          <div class="menu-item">
+            <div class="menu_text">
+              <h3>Nasi Babi Guling (Paket Pisah)</h3>
+              <p>Harga : Rp40.000</p>
+              <button
+                onclick="Tambahkan('Nasi Babi Guling (Paket Pisah)', 40000)">Tambahkan</button>
+            </div>
+            <img src="paket pisah.jpg" alt="" class="menu-img" />
+          </div>
+          <div class="menu-item">
+            <div class="menu_text">
+              <h3>Lawar</h3>
+              <p>Harga : Rp10.000</p>
+              <button onclick="Tambahkan('Lawar', 10000)">Tambahkan</button>
+            </div>
+            <img src="Lawar Kuwir.jpg" alt="" class="menu-img" />
+          </div>
+          <div class="menu-item">
+            <div class="menu_text">
+              <h3>Tum</h3>
+              <p>Harga : Rp5.000</p>
+              <button onclick="Tambahkan('TUM', 5000)">Tambahkan</button>
+            </div>
+            <img src="tum.jpg" alt="" class="menu-img" />
+          </div>
+        </section>
+  
+        <section class="pesan">
+          <h2>Pesanan Mu</h2>
+          <p id="total">Total: Rp0</p>
+          <button onclick="BeliAntarSekarang()">Beli dan AntarSekarang</button>
+        </section>
+      </main>
+
+      <script>
+        let total = 0;
+        let pesanan = [];
+        function Tambahkan(nama, harga) {
+        pesanan.push({ nama: nama, harga: harga });
+        total += harga;
+        document.getElementById('total').innerText = 'Total: Rp' + total;
+        }
+
+        function BeliAntarSekarang() {
+        if (total === 0) {
+        alert("Silahakan menambahakan item dulu wi");
+        return;
+        }
+
+        alert("Pesanan Anda telah diterima, Tunggu dianter nggih wi. Total: Rp" + total);
+        total = 0;
+        pesanan = [];
+        document.getElementById('total').innerText = 'Total: Rp0';
+        }
+      </script>
+
+      <footer class="footer">
+          <div class="informasi-footer h2">
+            <h2>Ikuti Kami</h2>
+            <div class="informasi-footer">
+              <a href="https://wa.me/081236505464">WhatsApp</a>
+              <a href="mailto:nandapraba.mp@gmail.com">nandapraba.mp@gmail.com</a>
+              <a href="https://www.instagram.com/_madenandana/">Instagram</a>
+            </div>
+          </div>
+        <div class="footer-akhir">
+          <p>&copy; NgajengTon. Semua Hak Dilindungi</p>
+        </div>
+    </footer>
+
+</body>
+</html>
